@@ -38,10 +38,22 @@ osszSulyELEM.innerHTML = `<p>A gyümölcsök súlya összesen: ${osszesit(GYUMOL
 
 
 // 3. feladat
-function vasarol(zoldseg) {
+/* <!-- 3. feladat  -->
+    <!-- Ha a feladat_1-ben lévő táblázat egyik elemére kattintunk -->
+    <!-- Az aktuális elem neve jelenjen meg a  feladat_3 elemben -->
 
+    <!-- Egy elemet csak egyszer tudjunk beletenni a megvásárolt listába -->
+    <!-- A megvásárolt termékeket a vasarolt []-ben tárold el és ez alapján jelenítsd meg az elemek nevét -->
+    <!-- Valamint a torles elemre helyezzük rá a hide osztályt --> */
+function vasarol(zoldseg) {
+    
 }
 
+const vasarolELEM = document.querySelectorAll("feladat_1 .td")
+vasarolELEM.addEventListener("click", vasarol)
+
+const vasaroltELEM = document.getElementById("feladat_3");
+vasaroltELEM.innerHTML = `<p></p>`
 
 // 4. feladat
 function torolEsemeny() {
